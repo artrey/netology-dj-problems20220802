@@ -1,0 +1,25 @@
+GET http://localhost:8000/products/
+
+###
+
+POST http://localhost:8000/products/
+Content-Type: application/json
+
+{
+  "name": "P1"
+}
+
+###
+
+GET http://localhost:8000/stocks/
+
+###
+
+POST http://localhost:8000/stocks/
+Content-Type: application/json
+
+{
+  "name": "S2",
+  "address": "A2",
+  "positions": [{"product": 1, "price": 100, "qty": 10}]
+}
